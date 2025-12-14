@@ -1,0 +1,21 @@
+.modal{
+    background-color: rgba(0,0,0,0.4);
+    
+    /* opacity: 40%; */
+}
+.modalForm
+{
+    background-color: white;
+    opacity: 100%;
+    padding: 10px;
+}
+.buttonOrange
+{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px
+}

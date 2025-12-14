@@ -1,0 +1,70 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px;
+  background: white;
+}
+
+.ticket-table th,
+.ticket-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.ticket-table th {
+  background: #f1f1f1;
+  text-align: left;
+}
+
+textarea {
+  width: 200px;
+  min-height: 70px;
+  resize: vertical;
+}
+
+select {
+  width: 120px;
+}
+
+.save-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.save-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 140px;
+  }
+}
+/*relvent data*/
+.manageTicketButton{
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.filterText{
+  width: 40%;
+}
+.separationLine{
+  height: 2px;
+  border-bottom: 2px #aaa solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
