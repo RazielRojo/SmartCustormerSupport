@@ -19,12 +19,11 @@ namespace SmartCustomerSupportSystemBackend.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAllTickets()
         {
-            var tickets = await _supportTicketService.GetAllTicketsAsync();
-            return Ok(tickets);
-
+                var tickets = await _supportTicketService.GetAllTicketsAsync();
+                return Ok(tickets);
         }
         [HttpGet]
-        public async Task<ActionResult?> GetTicketById(Guid id)
+        public async Task<ActionResult> GetTicketById(Guid id)
         {
             var ticket = await _supportTicketService.GetByIdAsync(id);
             return Ok(ticket);

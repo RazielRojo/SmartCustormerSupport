@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import TicketsPage from './pages/ticketsPage'
+import TicketsPage from './pages/TicketsPage'
 import TicketDetails from './pages/TicketDetails'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {

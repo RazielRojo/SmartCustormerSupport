@@ -32,7 +32,7 @@ namespace SmartCustomerSupportSystemBackend.Services
         public async Task UpdateStatusAsync(Guid id, string status, string resolution = "")
         {
             var ticket = await _repo.GetByIdAsync(id);
-            if (ticket == null) return;
+            if (ticket == null) throw new Exception("Ticket not found"); ;
 
             ticket.Status = status;
             ticket.Resolution = resolution;

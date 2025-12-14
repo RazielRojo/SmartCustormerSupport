@@ -18,9 +18,10 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddSingleton<ISupportTicketRepository, FileSupportTicketRepository>();
-builder.Services.AddSingleton<SupportTicketService>();
-builder.Services.AddSingleton<ITicketNotificationStrategy,
+builder.Services.AddSingleton<IEmailSender,SmtpEmailSender>();
+builder.Services.AddScoped<ITicketNotificationStrategy,
                            EmailTicketNotificationStrategy>();
+builder.Services.AddScoped<SupportTicketService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
