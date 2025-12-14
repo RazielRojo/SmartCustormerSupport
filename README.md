@@ -153,3 +153,14 @@ Please submit your solution as a **GitHub repository link** containing both:
 ---
 
 🧠 *Good luck and have fun building!*
+
+## 👀 Raz's notes
+I tried to make this project as clean lean and decoupled as I could without over absractions.
+I had some challage in combining the new tailswind so some react components as both tailwind and css classes.
+I added some extras like swagger in order to test the server separatly and in easy way.
+I also I made sending mail available on creating / updating tickets in order to use the mail please enter the credentials in the appsettings.json file. Then you need to uncomment the lines on the EmailNotificationStrategy.cs file starting from line 29.
+The arcitecture of the server is presst classic and combines DI in services and the repository and startegy design partterns.
+Client architecture uses function components and hooks.
+Hope you will enjoy the project 🚀
+
+
