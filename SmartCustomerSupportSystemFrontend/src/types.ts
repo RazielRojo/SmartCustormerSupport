@@ -13,3 +13,5 @@ export interface SupportTicketDTO {
   email: string;
   description: string;
 }
+
+export const STATUS_OPTIONS = ["New", "In Progress", "Resolved", "Closed"];

@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import type { SupportTicket } from '../types';
-
-const STATUS_OPTIONS = ["New", "In Progress", "Resolved", "Closed"];
+import { STATUS_OPTIONS } from '../types';
 
 interface TicketTableProps {
   tickets: SupportTicket[];

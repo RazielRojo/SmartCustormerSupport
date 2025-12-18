@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCustomerSupportSystemBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cfcdfd67c848ccb41edeed1a99381a88ed783eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCustomerSupportSystemBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCustomerSupportSystemBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
