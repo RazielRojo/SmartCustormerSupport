@@ -1,5 +1,6 @@
 import React from 'react';
-import { STATUS_OPTIONS } from '../types';
+
+const STATUS_OPTIONS = ["New", "In Progress", "Resolved", "Closed"];
 
 interface FilterBarProps {
   statusFilter: string;

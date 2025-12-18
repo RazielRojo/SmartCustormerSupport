@@ -68,4 +68,3 @@ C:\Users\Raz\source\repos\SmartCustormerSupport\SmartCustomerSupportSystemBacken
 C:\Users\Raz\source\repos\SmartCustormerSupport\SmartCustomerSupportSystemBackend\SmartCustomerSupportSystemBackend\obj\Debug\net8.0\SmartCustomerSupportSystemBackend.pdb
 C:\Users\Raz\source\repos\SmartCustormerSupport\SmartCustomerSupportSystemBackend\SmartCustomerSupportSystemBackend\obj\Debug\net8.0\SmartCustomerSupportSystemBackend.genruntimeconfig.cache
 C:\Users\Raz\source\repos\SmartCustormerSupport\SmartCustomerSupportSystemBackend\SmartCustomerSupportSystemBackend\obj\Debug\net8.0\ref\SmartCustomerSupportSystemBackend.dll
-C:\Users\Raz\source\repos\SmartCustormerSupport\SmartCustomerSupportSystemBackend\SmartCustomerSupportSystemBackend\obj\Debug\net8.0\SmartCustomerSupportSystemBackend.sourcelink.json
