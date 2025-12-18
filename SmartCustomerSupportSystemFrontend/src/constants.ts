@@ -1,0 +1,1 @@
+export const STATUS_OPTIONS = ["New", "In Progress", "Resolved", "Closed"];
