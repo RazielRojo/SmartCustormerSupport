@@ -163,4 +163,10 @@ The arcitecture of the server is presst classic and combines DI in services and 
 Client architecture uses function components and hooks.
 Hope you will enjoy the project 🚀
 
+|Things I would change/refactor 🛠️|
+|----------------------------|
+Fix the Tailwind.
+Add a middlware for logs / mail which is optional
+Add unit tests.
+Consider changing the status into enum in order to make it more relaibles this is a matter of point of view.
 
