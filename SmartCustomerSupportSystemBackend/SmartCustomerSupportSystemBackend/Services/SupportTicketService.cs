@@ -17,7 +17,7 @@ namespace SmartCustomerSupportSystemBackend.Services
         public Task<List<SupportTicket>> GetAllTicketsAsync()
             => _repo.GetAllAsync();
 
-        public async Task<Guid> CreateTicketAsync(SupportTicket ticket)
+        public async Task<SupportTicket> CreateTicketAsync(SupportTicket ticket)
         {
             ticket.Id = Guid.NewGuid();
             ticket.Status = "New";
@@ -25,7 +25,7 @@ namespace SmartCustomerSupportSystemBackend.Services
             ticket.UpdatedAt = DateTime.UtcNow;
 
             var res = await _repo.AddAsync(ticket);
-            await _strategy.NotifyAsync(ticket, TicketAction.Created);
+            //await _strategy.NotifyAsync(ticket, TicketAction.Created);
             return res;
         }
 

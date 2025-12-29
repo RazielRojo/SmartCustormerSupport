@@ -2,6 +2,7 @@
 using SmartCustomerSupportSystemBackend.DTOs;
 using SmartCustomerSupportSystemBackend.Entities;
 using SmartCustomerSupportSystemBackend.Services;
+using System.Net.Sockets;
 
 namespace SmartCustomerSupportSystemBackend.Controllers
 {
@@ -32,6 +33,8 @@ namespace SmartCustomerSupportSystemBackend.Controllers
         public async Task<ActionResult> CreateSupportTicket([FromBody] SupportTicketDTO ticket)
         {
             var res = await _supportTicketService.CreateTicketAsync(new SupportTicket(ticket.Name, ticket.Email, ticket.Description));
+            HttpContext.Items["TicketAction"] = TicketAction.Created;
+            HttpContext.Items["Ticket"] = res;
             return Ok(res);
         }
         [HttpPost]

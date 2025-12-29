@@ -7,7 +7,7 @@ namespace SmartCustomerSupportSystemBackend.Interfaces
     {
         Task<List<SupportTicket>> GetAllAsync();
         Task<SupportTicket?> GetByIdAsync(Guid id);
-        Task<Guid> AddAsync(SupportTicket ticket);
+        Task<SupportTicket> AddAsync(SupportTicket ticket);
         Task UpdateAsync(SupportTicket ticket);
         //this is not required for the task but usually is used in repository pattern
         //Task DeleteAsync(Guid id);

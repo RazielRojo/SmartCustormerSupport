@@ -38,12 +38,12 @@ public class FileSupportTicketRepository : ISupportTicketRepository
         return tickets.FirstOrDefault(t => t.Id == id);
     }
 
-    public async Task<Guid> AddAsync(SupportTicket ticket)
+    public async Task<SupportTicket> AddAsync(SupportTicket ticket)
     {
         var tickets = await LoadAsync();
         tickets.Add(ticket);
         await SaveAsync(tickets);
-        return ticket.Id;
+        return ticket;
     }
 
     public async Task UpdateAsync(SupportTicket ticket)

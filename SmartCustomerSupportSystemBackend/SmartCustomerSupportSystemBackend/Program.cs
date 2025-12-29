@@ -1,6 +1,7 @@
 
 
 using SmartCustomerSupportSystemBackend.Interfaces;
+using SmartCustomerSupportSystemBackend.Middleware;
 using SmartCustomerSupportSystemBackend.Services;
 using SmartCustomerSupportSystemBackend.Utilities;
 using System.Text;
@@ -21,6 +22,7 @@ builder.Services.AddSingleton<ISupportTicketRepository, FileSupportTicketReposit
 builder.Services.AddSingleton<IEmailSender,SmtpEmailSender>();
 builder.Services.AddScoped<ITicketNotificationStrategy,
                            EmailTicketNotificationStrategy>();
+builder.Services.AddScoped<ITicketNotificationStrategyResolver, TicketNotificationStrategyResolver>();
 builder.Services.AddScoped<SupportTicketService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -32,9 +34,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
+//not needed for this app but usually essesial for production
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseCors("AllowReact");
 app.MapControllers();
+app.UseMiddleware<TicketNotificationMiddleware>();
 app.Run();
