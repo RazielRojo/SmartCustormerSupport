@@ -175,7 +175,7 @@ Client side:
 Add the login page.
 Create input validations.
 Add loaders and error handling including no records found.
-Fix the Tailwind plugin, make.
+Fix the Tailwind plugin, make the css more responsive.
 
 
 
