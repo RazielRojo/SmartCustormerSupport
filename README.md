@@ -165,8 +165,17 @@ Hope you will enjoy the project 🚀
 
 |Things I would change/refactor 🛠️|
 |----------------------------|
-Fix the Tailwind.
-Add a middlware for logs / mail which is optional
+Server Side:
+Add the JW Authentication.
+Add a middlware for logs / mail which is optional.
+Error handeling with specific exeptions.
 Add unit tests.
 Consider changing the status into enum in order to make it more relaibles this is a matter of point of view.
+Client side:
+Add the login page.
+Create input validations.
+Add loaders and error handling including no records found.
+Fix the Tailwind plugin, make.
+
+
 
