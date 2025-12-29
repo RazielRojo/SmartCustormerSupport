@@ -166,7 +166,7 @@ Hope you will enjoy the project 🚀
 |Things I would change/refactor 🛠️|
 |----------------------------|
 Server Side:
-Add the JW Authentication.
+Add the JWT Authentication.
 Add a middlware for logs / mail which is optional.
 Error handeling with specific exeptions.
 Add unit tests.
